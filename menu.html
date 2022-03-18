@@ -6,7 +6,7 @@
 
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/sinclair.css" rel="stylesheet" type="text/css">
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 	
 <section class="nav">
 <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand d-lg-none" href="index.html"><img src="_assets/_logo/ZEN_UDON_Logo_TwoColor_HS.svg" alt="Zen Udon logo"></a>
+    <a class="navbar-brand d-lg-none" href="index.html"><img src="assets/logo/ZEN_UDON_Logo_TwoColor_HS.svg" alt="Zen Udon logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
         aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">☰</span>
@@ -22,12 +22,12 @@
     <div class="collapse navbar-collapse" id="myNavbarToggler7">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
+                <a class="nav-link " href="index.html">HOME</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link current-page" href="menu.html">MENU</a>
             </li>
-            <a class="d-none d-lg-block nav-logo" href="index.html"><img src="_assets/_logo/ZEN_UDON_Logo_TwoColor_HS.svg" alt="Zen Udon logo"></a>
+            <a class="d-none d-lg-block nav-logo" href="index.html"><img src="assets/logo/ZEN_UDON_Logo_TwoColor_HS.svg" alt="Zen Udon logo"></a>
             <li class="nav-item">
                 <a class="nav-link" href="about.html">ABOUT</a>
             </li>
@@ -42,8 +42,8 @@
 	<section class="menu-main">
 		<div class="container-fluid">
 		  <div class="row">
-		    <div class="col-lg-4 col" style="padding: 0px;">
-		      <div class="menu-images"><img src="_assets/_Images/_menu/starters.png" alt="Fried Tofu"></div>
+		    <div id="snacks" class="col-lg-4 col" style="padding: 0px;">
+		      <div class="menu-images"><img src="assets/Images/menu/starters.png" alt="Fried Tofu"></div>
 		      <h3 class="section-headers">STARTERS</h3>
 			  <div class="col-lg-12">
 					  <div class="row all-menu-type">
@@ -152,8 +152,8 @@
 				  </div> <!--End of sorround column-->
 	        </div> <!--End of col-->
 			  
-		    <div class="col-lg-4 udon" style="padding: 0px;">
-		      <div class="menu-images"><img src="_assets/_Images/_menu/udon.png" alt="Bowl of udon"></div>
+		    <div id="udon" class="col-lg-4 udon" style="padding: 0px;">
+		      <div class="menu-images"><img src="assets/Images/menu/udon.png" alt="Bowl of udon"></div>
 		      <h3 class="section-headers">UDON</h3>
 			  <div class="col-lg-12">
 					  <div class="row all-menu-type udon-items">
@@ -220,8 +220,39 @@
 				  </div> <!--End of sorround column-->
 	        </div> <!--End of col-->
 			  
-		    <div class="col-lg-4" style="padding: 0px;">
-		      <div class="menu-images"><img src="_assets/_Images/_menu/drinks.png" alt="Sake bottles"></div>
+			  <div class="col-lg-4 udon udon-cold-menu cold-menu-small" style="padding: 0px;">
+					<div class="col-lg-12">
+							<div class="row all-menu-type udon-items">
+										<div class="col-lg-12">
+											<h2 class="cold-udon-small">Cold Udon</h2>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-8 menu-items">
+											<li>Zaru</li>
+											<li class="menu-descriptions">Dip noodles in signature soy sauce; add desired green onions, grated ginger, ten-kasu, wasabi</li>
+										</div>
+										<div class="col-lg-1 col-md-1 col-sm-1 col-1 menu-prices prices-left">
+											<li>6</li>
+										</div>
+										<div class="col-lg-1 col-md-1col-sm-1 col-1 menu-prices prices-right">
+											<li>8</li>
+										</div>
+								
+										<div class="col-lg-8 col-md-8 col-sm-8 col-8 menu-items">
+											<li>Kamo Zaru</li>
+											<li class="menu-descriptions">Dip noodles in duck-leek-dashi soy sauce; duck breast; add desired green onions, grated ginger,yuzu kosho</li>
+										</div>
+										<div class="col-lg-1 col-md-1 col-sm-1 col-1 menu-prices prices-left">
+											<li>10</li>
+										</div>
+										<div class="col-lg-1 col-md-1col-sm-1 col-1 menu-prices prices-right">
+											<li>12</li>
+										</div>
+							</div><!--End of nested row-->
+						</div>
+				</div> <!--End of col-->
+			  
+		    <div id="drinks" class="col-lg-4" style="padding: 0px;">
+		      <div class="menu-images"><img src="assets/Images/menu/drinks.png" alt="Sake bottles"></div>
 			    <h3 class="section-headers">DRINKS</h3>
 				<div class="col-lg-12">
 					<div class="row all-menu-type">
@@ -298,8 +329,8 @@
 			</div> <!--End of top row-->
 			
 		  <div class="row">
-				<div class="col-lg-4" style="padding: 0px;">
-					<div class="menu-images"><img src="_assets/_Images/_menu/sides.png" alt="Various side dishes"></div>
+				<div id="sides" class="col-lg-4" style="padding: 0px;">
+					<div class="menu-images"><img src="assets/Images/menu/sides.png" alt="Various side dishes"></div>
 					<h3 class="section-headers">SIDES</h3>
 					<div class="col-lg-12">
 							<div class="row all-menu-type">
@@ -336,7 +367,7 @@
 						</div>
 				</div> <!--End of col-->
 				
-				<div class="col-lg-4 udon udon-cold" style="padding: 0px;">
+				<div class="col-lg-4 udon udon-cold-menu" style="padding: 0px;">
 					<div class="col-lg-12">
 							<div class="row all-menu-type udon-items">
 										<div class="col-lg-12 mx-auto">
@@ -368,7 +399,7 @@
 				</div> <!--End of col-->
 				
 				<div class="col-lg-4" style="padding: 0px;">
-					<div class="menu-images"><img src="_assets/_Images/_menu/dessert.png" alt="Mochi"></div>
+					<div class="menu-images"><img src="assets/Images/menu/dessert.png" alt="Mochi"></div>
 					<h3 class="section-headers">DESSERT</h3>
 					<div class="col-lg-12">
 							<div class="row all-menu-type">
@@ -408,9 +439,9 @@
 		<div class="row">
 			<div class="col-md-2 col-sm-3 col-4">
 				<ul class="social-icons">
-					<a href="#"><li><img class="footer-icons" src="_assets/_Images/_icons/twitter_icon.svg" alt="Twitter logo"></li></a>
-					<a href="#"><li><img class="footer-icons" src="_assets/_Images/_icons/instagram_icon.svg" alt="Instagram logo"></li></a>
-					<a href="#"><li><img class="footer-icons" src="_assets/_Images/_icons/facebook_Icon.svg" alt="Facebook logo"></li></a>
+					<a href="#"><li><img class="footer-icons" src="assets/Images/icons/twitter_icon.svg" alt="Twitter logo"></li></a>
+					<a href="#"><li><img class="footer-icons" src="assets/Images/icons/instagram_icon.svg" alt="Instagram logo"></li></a>
+					<a href="#"><li><img class="footer-icons" src="assets/Images/icons/facebook_Icon.svg" alt="Facebook logo"></li></a>
 				</ul>
 			</div> <!--End of col-->
 			<div class="col-lg-5 col-md-4 col-6 footer-text col-sm-5">
